@@ -6,7 +6,7 @@
               <div class="table-responsive">
                 <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
+                    <tr class="bg-info text-white">
                         <th>Class</th>
                         <th>Course</th>
                         <th></th>
@@ -27,7 +27,7 @@
                                 <a class="btn btn-primary" href="{% url 't_marks_list' ass.id %}" role="button">Enter Marks</a>
                                 <a class="btn btn-danger" href="{% url 't_student_marks' ass.id %}">View Students</a>
                             {% elif choice == 3 %}
-                                <a class="btn btn-danger" href="{% url 't_report' ass.id %}">Generate reports</a>
+                                <a class="btn btn-info" href="{% url 't_report' ass.id %}">Generate reports</a>
                             {% endif %}
 
                         </td>

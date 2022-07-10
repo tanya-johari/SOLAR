@@ -36,7 +36,10 @@
 
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="{% url 'index' %}">CollegeERP</a>
+      <a class="navbar-brand" href="http://bvicam.in/">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/GGSIU_logo.svg/1200px-GGSIU_logo.svg.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
+        Bharati Vidyapeeth College of Computer Applications and Management
+      </a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
         <i class="fas fa-bars"></i>
@@ -52,10 +55,10 @@
 
         <div class="container-fluid">
 
-            <div class="text-center h3">
-                you have been logged out
+            <div class="text-center h3 text-danger">
+                You have been logged out!!
                 <br><br>
-                <a class="btn btn-success" href="/accounts/login">login?</a>
+                <a class="btn btn-success" href="/accounts/login">Login</a>
             </div>
 
         </div>
@@ -63,12 +66,12 @@
 
       </div>
       <!-- /.content-wrapper -->
-
+        
     </div>
     <!-- /#wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
+    <a class="scroll-to-top rounded" href="#page-top">TOP
       <i class="fas fa-angle-up"></i>
     </a>
 
@@ -85,6 +88,32 @@
 
    {% block scripts %}
     {% endblock %}
+   
   </body>
+<!-- Footer -->
+<footer class="page-footer font-small black">
+  <div class="footer-copyright text-center py-3 text-white-50 bg-dark">
+    <h4>Contact Us</h4>
+      <p>
+  Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)<br>
+  A-4, Paschim Vihar, Opp. Paschim Vihar (East) Metro Station,<br>
+  Rohtak Road, New Delhi - 110063<br>
+  Phone : +91 - 11 - 25275055<br>
+  Fax : +91 - 11 - 25255056<br>
+  Mobile : +91 - 9212022066<br>
+  Email : mca@bvicam.ac.in; mca.hoda@gmail.com<br>
+  Website : http://www.bvicam.ac.in/<br>
+      </p>
+  </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white-50 bg-dark">© 2022 Made By:
+      <a href="https://github.com/tanya-johari"> Tanya Johari</a>
+      <a href="https://github.com/lavi-chadha"> Lavi Chadha</a>
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
 </html>

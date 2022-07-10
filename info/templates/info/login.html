@@ -21,14 +21,51 @@
 
     <!-- Custom styles for this template-->
     <link href="{% static '/info/bootstrap/css/sb-admin.css' %}" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-
-  <body class="bg-dark">
-
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="http://bvicam.in/">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/GGSIU_logo.svg/1200px-GGSIU_logo.svg.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
+        Bharati Vidyapeeth College of Computer Applications and Management
+      </a>
+    </div>
+  </nav>
+  
+  <body class="bg-light">
+    
     <div class="container">
-      <div class="card card-login mx-auto mt-5">
-        <div class="card-header">Login</div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'info/images/download.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'info/images/BVICAM-Delhi.PNG' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'info/images/3RD.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 style="text-align:center ;">STUDENT AND TEACHER LOGIN PORTAL</h2>
+
+       <div class="card card-login mx-auto mt-5 ">
+        <div class="card-header bg-dark text-white">Login</div>
         <div class="card-body">
             <form method="post">
               {% csrf_token %}
@@ -38,6 +75,15 @@
 
         </div>
       </div>
+      <p style="color: black ; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; align-content: center; text-align: center;">
+        BVICAM is centrally located at A-4, Paschim Vihar, adjacent to Paschim Vihar (East) DMRC Metro 
+        Station, National Highway No. 10, Rohtak Road, New Delhi, in its own state of the art sprawling 
+        campus. It is well poised with spacious parking areas with an excellent surrounding pollution free 
+        and healthy environment. The campus incorporates amenities like Conference Hall, Auditorium, 
+        Amphitheatre, modern Computer Resource Centre, well stocked Library, Student's Hostel, Guest House, 
+        In-house Banking facility, Indoor and Outdoor games facility, aesthetically designed Canteen in an
+         open-air ambience, etc.
+        </p>
     </div>
 
     <!-- Bootstrap core JavaScript-->
@@ -48,5 +94,29 @@
     <script src="{% static '/info/bootstrap/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
   </body>
+  <!-- Footer -->
+<footer class="page-footer font-small black">
+<div class="footer-copyright text-center py-3 text-white-50 bg-dark">
+  <h4>Contact Us</h4>
+    <p>
+Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)<br>
+A-4, Paschim Vihar, Opp. Paschim Vihar (East) Metro Station,<br>
+Rohtak Road, New Delhi - 110063<br>
+Phone : +91 - 11 - 25275055<br>
+Fax : +91 - 11 - 25255056<br>
+Mobile : +91 - 9212022066<br>
+Email : mca@bvicam.ac.in; mca.hoda@gmail.com<br>
+Website : http://www.bvicam.ac.in/<br>
+    </p>
+</div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-white-50 bg-dark">© 2022 Made By:
+    <a href="https://github.com/tanya-johari"> Tanya Johari</a>
+    <a href="https://github.com/lavi-chadha"> Lavi Chadha</a>
+    
+  </div>
+  <!-- Copyright -->
 
+</footer>
+<!-- Footer -->
 </html>

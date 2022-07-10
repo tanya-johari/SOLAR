@@ -28,7 +28,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'index' %}">CollegeERP</a>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/GGSIU_logo.svg/1200px-GGSIU_logo.svg.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
+       
+        <a class="navbar-brand" href="{% url 'index' %}">Bharati Vidyapeeth's Institute of Computers Applications and Management</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -51,8 +53,7 @@
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
         <h1 class="display-3 text-capitalize">Welcome {{ request.user.teacher.name }}</h1>
-{#        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>#}
-{#        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>#}
+       
       </header>
 
       <!-- Page Features -->
@@ -63,13 +64,13 @@
               <a href="{% url 't_clas' request.user.teacher.id 1 %}">
                 <img class="card-img-top" src="{% static 'info/images/attendance2.jpg' %}" alt="">
               </a>
-              <div class="card-body">
+              <div class="card-body bg-info">
               <h4 class="card-title">Attendance</h4>
               <p class="card-text">Enter the attendance of the students based on the class they are in. There is also
                   the provision to edit the attendance of a whole class or student individually.</p>
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="{% url 't_clas' request.user.teacher.id 1 %}"> Enter Attendance</a>
+                <a class="btn btn-info" role="button" href="{% url 't_clas' request.user.teacher.id 1 %}"> Enter Attendance</a>
             </div>
           </div>
         </div>
@@ -79,13 +80,13 @@
               <a href="{% url 't_clas' request.user.teacher.id 2 %}">
                 <img class="card-img-top" src="{% static 'info/images/marks.jpg' %}" alt="">
               </a>
-              <div class="card-body">
+              <div class="card-body bg-warning">
               <h4 class="card-title">Marks</h4>
               <p class="card-text">Enter the marks of the students based on the class they are in. This includes
                     Internals, events and SEE. The marks of the students can also be edited.</p>
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="{% url 't_clas' request.user.teacher.id 2 %}">Enter Marks</a>
+                <a class="btn btn-warning" role="button" href="{% url 't_clas' request.user.teacher.id 2 %}">Enter Marks</a>
             </div>
           </div>
         </div>
@@ -95,13 +96,13 @@
               <a href="{% url 't_timetable' request.user.teacher.id %}">
                 <img class="card-img-top" src="{% static 'info/images/timetable.png' %}" alt="">
               </a>
-              <div class="card-body">
-              <h4 class="card-title">TimeTable</h4>
+              <div class="card-body bg-dark text-white">
+              <h4 class="card-title">Time Table</h4>
               <p class="card-text">View the timetable in a tabular form. For a particular class, it specifies a
                   list of teachers who handle the same class that are free for that time slot.</p>
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="{% url 't_timetable' request.user.teacher.id %}">View TimeTable</a>
+                <a class="btn btn-dark" role="button" href="{% url 't_timetable' request.user.teacher.id %}">View TimeTable</a>
             </div>
           </div>
         </div>
@@ -111,13 +112,13 @@
             <a href="{% url 't_clas' request.user.teacher.id 3 %}">
                 <img class="card-img-top" src="{% static 'info/images/reports.png' %}" alt="">
             </a>
-            <div class="card-body">
+            <div class="card-body bg-danger text-white">
               <h4 class="card-title">Reports</h4>
               <p class="card-text">Generate reports for each class. These reports include generating a table consisting
                     of the students belonging to that class and their respective CIE and Attendance.</p>
             </div>
             <div class="card-footer">
-              <a href="{% url 't_clas' request.user.teacher.id 3 %}" class="btn btn-primary">Generate Reports</a>
+              <a href="{% url 't_clas' request.user.teacher.id 3 %}" class="btn btn-danger">Generate Reports</a>
             </div>
           </div>
         </div>
@@ -153,5 +154,29 @@
     <script src="{% static '/info/homepage/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
   </body>
-
+<!-- Footer -->
+<footer class="page-footer font-small black">
+  <div class="footer-copyright text-center py-3 text-white-50 bg-dark">
+    <h4>Contact Us</h4>
+      <p>
+  Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)<br>
+  A-4, Paschim Vihar, Opp. Paschim Vihar (East) Metro Station,<br>
+  Rohtak Road, New Delhi - 110063<br>
+  Phone : +91 - 11 - 25275055<br>
+  Fax : +91 - 11 - 25255056<br>
+  Mobile : +91 - 9212022066<br>
+  Email : mca@bvicam.ac.in; mca.hoda@gmail.com<br>
+  Website : http://www.bvicam.ac.in/<br>
+      </p>
+  </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white-50 bg-dark">© 2022 Made By:
+      <a href="https://github.com/tanya-johari"> Tanya Johari</a>
+      <a href="https://github.com/lavi-chadha"> Lavi Chadha</a>
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 </html>
