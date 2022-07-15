@@ -11,9 +11,9 @@
                 </div>
                 <div id="no-more-tables">
                     <table class="col-sm-12 table table-bordered table-striped table-condensed cf">
-                        <thead class="cf">
-                            <tr>
-                                <th>      </th>
+                        
+                            <tr class=" bg-info text-white" >
+                                <th >      </th>
                                 <th>7:30 - 8:30</th>
                                 <th>8:30 - 9:30</th>
                                 <th>9:30 - 10:30</th>
@@ -26,13 +26,13 @@
                                 <th>3:30 - 4:30</th>
                                 <th>4:30 - 5:30</th>
                             </tr>
-                        </thead>
+                       
                         <tbody>
                             {% for i in matrix %}
                             <tr>
                                 {% for j in i %}
                                     {% if forloop.counter == 1 %}
-                                    <td><b>{{ j }}</b></td>
+                                    <td class="bg-info text-white"><b>{{ j }}</b></td>
                                     {% else %}
                                     <td>{{ j }}</td>
                                     {% endif %}
