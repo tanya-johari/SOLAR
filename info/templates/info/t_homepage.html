@@ -52,7 +52,7 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3 text-capitalize">Welcome {{ request.user.teacher.name }}</h1>
+        <h3 class="display-5 text-capitalize">Welcome {{ request.user.teacher.name }}</h3>
        
       </header>
 
@@ -62,7 +62,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
               <a href="{% url 't_clas' request.user.teacher.id 1 %}">
-                <img class="card-img-top" src="{% static 'info/images/attendance2.jpg' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/att2.jpg' %}" alt="">
               </a>
               <div class="card-body bg-info">
               <h4 class="card-title">Attendance</h4>
@@ -78,7 +78,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
               <a href="{% url 't_clas' request.user.teacher.id 2 %}">
-                <img class="card-img-top" src="{% static 'info/images/marks.jpg' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/mks.jpg' %}" alt="">
               </a>
               <div class="card-body bg-warning">
               <h4 class="card-title">Marks</h4>
@@ -94,7 +94,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
               <a href="{% url 't_timetable' request.user.teacher.id %}">
-                <img class="card-img-top" src="{% static 'info/images/timetable.png' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/time.png' %}" alt="">
               </a>
               <div class="card-body bg-dark text-white">
               <h4 class="card-title">Time Table</h4>
@@ -110,7 +110,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
             <a href="{% url 't_clas' request.user.teacher.id 3 %}">
-                <img class="card-img-top" src="{% static 'info/images/reports.png' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/reports.jpg' %}" alt="">
             </a>
             <div class="card-body bg-danger text-white">
               <h4 class="card-title">Reports</h4>

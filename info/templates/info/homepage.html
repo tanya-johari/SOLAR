@@ -50,7 +50,7 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3 text-capitalize">Welcome {{ request.user.student.name }}</h1>
+        <h3 class="display-5 text-capitalize">Welcome {{ request.user.student.name }}</h3>
 {#        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>#}
 {#        <a href="#" class="btn btn-primary btn-lg">Call to action!</a>#}
       </header>
@@ -61,7 +61,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card ">
               <a href="{% url 'attendance' request.user.student.USN %}">
-                <img class="card-img-top" src="{% static 'info/images/attendance2.jpg' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/att2.jpg' %}" alt="">
               </a>
               <div class="card-body bg-info">
               <h4 class="card-title ">Attendance</h4>
@@ -77,7 +77,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
               <a href="{% url 'marks_list' request.user.student.USN %}">
-                <img class="card-img-top" src="{% static 'info/images/marks.jpg' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/mks.jpg' %}" alt="">
               </a>
               <div class="card-body bg-warning">
               <h4 class="card-title">Marks</h4>
@@ -93,7 +93,7 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card">
               <a href="{% url 'timetable' request.user.student.class_id_id %}">
-                <img class="card-img-top" src="{% static 'info/images/timetable.png' %}" alt="">
+                <img class="card-img-top" src="{% static 'info/images/time.png' %}" alt="">
               </a>
               <div class="card-body bg-dark text-white">
               <h4 class="card-title">TimeTable</h4>
